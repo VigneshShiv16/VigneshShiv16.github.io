@@ -1,0 +1,330 @@
+:root {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+}
+/* This section is about top navigation menu */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+ul.topnav li {
+    float: left;
+}
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* This section is the outer hover of the button*/
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+ul.topnav li a.active {
+    background-color: #4CAF50;
+}
+/* This section notes the position of the button that may left or right as per float.*/
+ul.topnav li.right {
+    float: right;
+}
+
+/* This media query is to resize the shape of the top navigation menu as per the screen width size*/
+
+@media screen and (max-width: 600px) {
+    ul.topnav li a { font-size: 12px; }
+    ul.topnav li.right,
+    ul.topnav li { float: none; }
+}
+
+/* This section is about my name */
+.myname {
+    border: 1px solid #F0F4C3;
+    box-shadow: 0px 3px 20px 2px #F0F4C3;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    overflow: auto;
+}
+.degree {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* This media query is used to resize the fonts according to the width of the screen*/
+@media only screen and (max-width: 480px) {
+.myname {
+    font-size: 15px;
+}
+.degree{
+    font-size: 13px;
+}
+}
+
+/*This section is about me and my professional experience*/
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: #FFEBEE;
+    padding-bottom: 5vh;
+    overflow:auto;
+}
+#paragraph1{
+    color: green;
+    margin: 5vh;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid green;
+}
+.paragraph2 {
+    color: #000000;
+    text-align: center;
+    margin-top: -2vh;
+    font-family: 'Alice', serif;
+    font-size: 25px;
+}
+#color1 {
+    color: #000000;
+    font-size: 30px;
+    font-family: 'Alice', serif;
+
+}
+
+/*This media query is used to resize the fonts as per the screen width size. */
+@media only screen and (max-width: 480px) {
+    #paragraph1 {
+        font-size: 15px;
+        width: 100px;
+    }
+    .paragraph2 {
+        font-size: 13px;
+    }
+    #color1 {
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+    #paragraph1 {
+        font-size: 25px;
+        width: 200px;
+    }
+    .paragraph2 {
+        font-size: 20px;
+    }
+    #color1 {
+        font-size: 25px;
+    }
+}
+
+/* This section is about my technology interest and my skills*/
+
+.container1 {
+    background: #0091EA;
+    overflow: auto;
+}
+#interest1 {
+    color: #FFFDE7;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    shape-margin: auto;
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid #FFFFFF;
+    font-family: 'Cinzel', serif;
+}
+#interest2 {
+    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Sorts Mill Goudy', serif;
+}
+#int {
+    text-align: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: red;
+    font-size: 30px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 4px dotted #E040FB;
+    font-family: 'Audiowide', cursive;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #0091EA;
+    color: #FFFFFF;
+    font-family: 'Audiowide', cursive;
+}
+#int1 {
+    font-size: 30px;
+}
+#int2 {
+    font-size: 25px;
+}
+
+/*This media query is used to resize the fonts as per the screen width size. */
+
+@media only screen and (max-width: 480px) {
+    #interest1 {
+        font-size: 15px;
+        width: 125px;
+    }
+    #interest2 {
+        font-size: 13px;
+    }
+    #int {
+        font-size: 13px;
+        width: 150px;
+    }
+    #int1 {
+        font-size: 15px;
+    }
+    #int2 {
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+    #interest1 {
+        font-size: 25px;
+        width: 200px;
+    }
+    #interest2 {
+        font-size: 20px;
+    }
+    #int {
+        font-size: 25px;
+        width: 270px;
+    }
+    #int1 {
+        font-size: 25px;
+    }
+    #int2 {
+        font-size: 20px;
+    }
+}
+
+/*This container is about my projects. */
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3vh;
+    background-color: #FFCCBC;
+    width: 100%;
+    overflow: auto;
+}
+#ProjectTitle {
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    border: 2px solid #004D40;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ProjectName {
+    font-size: 25px;
+    color: brown;
+    text-align: center;
+    font-family: 'Coda', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/*This media query is used to resize the fonts as per the screen width size. */
+
+@media only screen and (max-width: 480px)
+{
+    #ProjectTitle {
+    font-size: 15px;
+    width: 100px;
+    }
+    #ProjectName {
+    font-size: 13px;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 720px)
+{
+    #ProjectTitle {
+    font-size: 25px;
+    width: 180px;
+    }
+    #ProjectName {
+    font-size: 20px;
+    }
+}
+
+/* This container is about my social contact using buttons, then size, shape and color of the button and fonts. */
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    background: #795548;
+    overflow: auto;
+}
+#contactTitle {
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    border: 2px solid #000000;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Concert One', cursive;
+}
+.follows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#click {
+    font-size:25px;
+    border-radius: 25px;
+    border: 2px solid #E91E63;
+    background-color: #F9FBE7;
+    cursor: pointer;
+    outline: hidden;
+}
+
+/*This media query is used to resize the fonts as per the screen width size. */
+
+@media only screen and (max-width: 480px) {
+    #contactTitle {
+        font-size: 15px;
+        width: 100px;
+    }
+    #click {
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+    #contactTitle {
+        font-size: 25px;
+        width: 150px;
+    }
+    #click {
+        font-size: 20px;
+    }
+}

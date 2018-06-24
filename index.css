@@ -269,7 +269,7 @@ ul.topnav li.right {
 {
     #ProjectTitle {
     font-size: 25px;
-    width: 180px;
+    width: 200px;
     }
     #ProjectName {
     font-size: 20px;
@@ -303,6 +303,7 @@ ul.topnav li.right {
     font-size:25px;
     border-radius: 25px;
     border: 2px solid #E91E63;
+    outline: none;
     background-color: #F9FBE7;
     cursor: pointer;
     outline: hidden;
@@ -322,7 +323,7 @@ ul.topnav li.right {
 @media only screen and (min-width: 481px) and (max-width: 720px) {
     #contactTitle {
         font-size: 25px;
-        width: 150px;
+        width: 200px;
     }
     #click {
         font-size: 20px;
